@@ -4,11 +4,19 @@
 	height:500px;
 	}
 	
-@media screen\9 { 
+@media \0screen\,screen\9 {
     .fttc-diagram-code {
         display: none; 
     }
 }
+
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+    .fttc-diagram-code {
+        display: none; 
+    }
+}
+_:-ms-fullscreen, :root .fttc-diagram-code {display: none;}
+
 	.copper-line{
 	  opacity:0.3;
     fill:none;stroke:#27AAE1;
