@@ -1,0 +1,336 @@
+<style>
+  .flake {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+  }
+</style>
+<!--Birthday (5th April)-->
+<div id="background-wrap">
+<div class="bubble x1"></div>
+<div class="bubble x2"></div>
+<div class="bubble x3"></div>
+<div class="bubble x4"></div>
+<div class="bubble x5"></div>
+<div class="bubble x6"></div>
+<div class="bubble x7"></div>
+<div class="bubble x8"></div>
+<div class="bubble x9"></div>
+<div class="bubble x10"></div>
+</div>
+<style>
+#background-wrap {
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  text-align: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.bubble {
+  display: inline-block;
+  width: 120px;
+  height: 145px;
+  background: hsl(215, 50%, 65%);
+  position: absolute;
+  box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+  z-index: 10;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  margin-top: -100%;
+  border-radius: 50%;
+}
+
+.bubble::before {
+  content: "▲";
+  font-size: 20px;
+  color: hsl(215, 30%, 50%);
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: -12px;
+  z-index: -100;
+}
+
+.bubble::after {
+  top: 153px;
+  position: absolute;
+  text-align: center;
+  height: 250px;
+  width: 1px;
+  margin: 0 auto;
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+  0% { margin-top: 1000px; }
+  100% { margin-top: -100%; }
+}
+
+@-moz-keyframes animateBubble {
+  0% { margin-top: 1000px; }
+  100% { margin-top: -100%; }
+}
+
+@keyframes animateBubble {
+  0% { margin-top: 1000px; }
+  100% { margin-top: -100%; }
+}
+
+@-webkit-keyframes sideWays {
+  0% { margin-left: 0px; }
+  100% { margin-left: 50px; }
+}
+
+@-moz-keyframes sideWays {
+  0% { margin-left: 0px; }
+  100% { margin-left: 50px; }
+}
+
+@keyframes sideWays {
+  0% { margin-left: 0px; }
+  100% { margin-left: 50px; }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+  -webkit-animation: animateBubble 10s linear, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 10s linear, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 10s linear, sideWays 2s ease-in-out infinite alternate;
+  left: -5%;
+  top: 5%;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.x2 {
+  background: hsl(245, 40%, 65%);
+  -webkit-animation: animateBubble 8s linear, sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 8s linear, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 8s linear, sideWays 4s ease-in-out infinite alternate;
+  left: 5%;
+  top: 80%;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.bubble:nth-child(2) {
+  background: hsl(245, 40%, 65%);
+}
+
+.bubble:nth-child(2)::before {
+  color: hsl(245, 40%, 65%);
+}
+
+.x3 {
+  -webkit-animation: animateBubble 12s linear, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 12s linear, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 12s linear, sideWays 2s ease-in-out infinite alternate;
+  left: 10%;
+  top: 40%;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.bubble:nth-child(3) {
+  background: hsl(139, 50%, 60%);
+}
+
+.bubble:nth-child(3)::before {
+  color: hsl(139, 30%, 50%);
+}
+
+.x4 {
+  -webkit-animation: animateBubble 9s linear, sideWays 3s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 9s linear, sideWays 3s ease-in-out infinite alternate;
+  animation: animateBubble 9s linear, sideWays 3s ease-in-out infinite alternate;
+  left: 20%;
+  top: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.bubble:nth-child(4) {
+  background: hsl(59, 50%, 58%);
+}
+
+.bubble:nth-child(4)::before {
+  color: hsl(59, 30%, 52%);
+}
+
+.x5 {
+  -webkit-animation: animateBubble 13s linear, sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 13s linear, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 13s linear, sideWays 4s ease-in-out infinite alternate;
+  left: 30%;
+  top: 50%;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.bubble:nth-child(5) {
+  background: hsl(23, 55%, 57%);
+}
+
+.bubble:nth-child(5)::before {
+  color: hsl(23, 44%, 46%);
+}
+
+.x6 {
+  -webkit-animation: animateBubble 7s linear, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 7s linear, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 7s linear, sideWays 2s ease-in-out infinite alternate;
+  left: 50%;
+  top: 0;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.bubble:nth-child(6) {
+  background: hsl(0, 62%, 52%);
+}
+
+.bubble:nth-child(6)::before {
+  color: hsl(0, 56%, 42%);
+}
+
+.x7 {
+  -webkit-animation: animateBubble 6s linear, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 6s linear, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 6s linear, sideWays 2s ease-in-out infinite alternate;
+  left: 65%;
+  top: 70%;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.bubble:nth-child(7) {
+  background: hsl(282, 67%, 65%);
+}
+
+.bubble:nth-child(7)::before {
+  color: hsl(282, 57%, 45%);
+}
+
+.x8 {
+  -webkit-animation: animateBubble 7s linear, sideWays 3s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 7s linear, sideWays 3s ease-in-out infinite alternate;
+  animation: animateBubble 7s linear, sideWays 3s ease-in-out infinite alternate;
+  left: 80%;
+  top: 10%;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.bubble:nth-child(8) {
+  background: hsl(180, 100%, 72%);
+}
+
+.bubble:nth-child(8)::before {
+  color: hsl(180, 90%, 62%);
+}
+
+.x9 {
+  -webkit-animation: animateBubble 12s linear, sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 12s linear, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 12s linear, sideWays 4s ease-in-out infinite alternate;
+  left: 90%;
+  top: 50%;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.bubble:nth-child(9) {
+  background: hsl(23, 55%, 57%);
+}
+
+.bubble:nth-child(9)::before {
+  color: hsl(23, 44%, 46%);
+}
+
+.x10 {
+  -webkit-animation: animateBubble 10s linear, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 10s linear, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 10s linear, sideWays 2s ease-in-out infinite alternate;
+  left: 80%;
+  top: 80%;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.bubble:nth-child(10) {
+  background: hsl(245, 40%, 65%);
+}
+
+.bubble:nth-child(10)::before {
+  color: hsl(245, 40%, 65%);
+}
+</style>
+<script>
+var q = new Date();
+if(q.getDate() == 5 && q.getMonth() + 1 == 4 && location.pathname=="/")
+{
+	document.getElementById("background-wrap").style.display = "block";
+}
+else {  
+	document.getElementById("background-wrap").style.display = "none";
+}
+</script>
+
+<!-- Christmas (From 1st Jan)-->
+<script>
+var q = new Date();
+if(q.getDate() >= 1 && q.getMonth() + 1 == 12)
+{
+	var Webflow = Webflow || [];
+Webflow.push(function() {
+  $.getScript('https://raw.githack.com/JSW10/commsplus/master/decoration.js', function() {
+    $.fn.snow({ newOn: 200, flakeChar: '&#10052', flakeColor: ["#7af4f2"],
+    });
+  });
+});
+
+}
+else {  
+}
+</script>
+
+<!-- Valentines -->
+<script>
+var q = new Date();
+if(q.getDate() == 14 && q.getMonth() + 1 == 2)
+{
+	var Webflow = Webflow || [];
+Webflow.push(function() {
+  $.getScript('https://raw.githack.com/JSW10/commsplus/master/decoration.js', function() {
+    $.fn.snow({ newOn: 1000, flakeChar: '&#9829', maxSize: 15, flakeColor: ["#ff2679"],
+    });
+  });
+});
+
+}
+else {  
+}
+</script>
