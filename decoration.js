@@ -1,5 +1,5 @@
 /**
- * jquery.snow - jQuery Snow Effect Plugin
+ * Decoration by jameswhitrow.co.uk | jQuery Rain/Snow Effect Plugin
  *
  * @params flakeChar - the HTML char to animate
  * @params minSize - min size of snowflake, 10 by default
