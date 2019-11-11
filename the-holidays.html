@@ -334,3 +334,21 @@ Webflow.push(function() {
 else {  
 }
 </script>
+
+<!-- Rememberance -->
+<script>
+var q = new Date();
+if(q.getDate() == 11 && q.getMonth() + 1 == 11)
+{
+	var Webflow = Webflow || [];
+Webflow.push(function() {
+  $.getScript('https://raw.githack.com/JSW10/commsplus/master/decoration.js', function() {
+    $.fn.snow({ newOn: 1000, flakeChar: '&#x00F0', maxSize: 15, flakeColor: ["#c73d32"],
+    });
+  });
+});
+
+}
+else {  
+}
+</script>
