@@ -299,7 +299,7 @@ else {
 }
 </script>
 
-<!-- Christmas (From 1st Jan)-->
+<!-- Christmas (From 1st Dec)-->
 <script>
 var q = new Date();
 if(q.getDate() >= 1 && q.getMonth() + 1 == 12)
@@ -309,6 +309,20 @@ Webflow.push(function() {
   $.getScript('https://raw.githack.com/JSW10/commsplus/master/decoration.js', function() {
     $.fn.snow({ newOn: 200, flakeChar: '&#10052', flakeColor: ["#7af4f2"],
     });
+  });
+});
+
+}
+else {  
+}
+</script>
+<script>
+var q = new Date();
+if(q.getDate() >= 1 && q.getMonth() + 1 == 12)
+{
+	var Webflow = Webflow || [];
+Webflow.push(function() {
+  var x = document.getElementById("steve").src = "https://uploads-ssl.webflow.com/5b6c559a4c38191337166ccf/5c00f920e3ef7cec54e36c00_steve-collard-christmas.jpg";
   });
 });
 
